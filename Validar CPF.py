@@ -2,7 +2,7 @@ def validar(cpf):
     if len(cpf) != 14:
         print("O formato do CPF é inválido, siga o formato 'xxx.xxx.xxx-xx'.")
         return False
-    elif cpf[3] != '.' or cpf[7] != '.' or cpf[11] != '-':
+    if cpf[3] != '.' or cpf[7] != '.' or cpf[11] != '-':
         print("O formato do CPF é inválido, siga o formato 'xxx.xxx.xxx-xx'.")
         return False
     
